@@ -19,7 +19,7 @@ stages:
         repository: 'itech0306/azure-devops-app'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
-        tags: latest
+        tags: $(Build.BuildId)
 
 - stage: Deploy
   jobs:
