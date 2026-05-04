@@ -1,0 +1,7 @@
+apiVersion: kubeadm.k8s.io/v1beta3
+kind: ClusterConfiguration
+apiServer:
+  certSANs:
+    - "100.23.176.183"
+    - "172.31.25.6"
+    - "127.0.0.1"
